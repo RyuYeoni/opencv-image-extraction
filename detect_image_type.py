@@ -8,7 +8,7 @@ body.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 bodyParams = {'winStride':(8,8), 'padding':(32, 32), 'scale':1.05, 'hitThreshold':0}
 
 #읽을 사진 파일
-img = cv2.imread("./image/portrait1.jpg")
+img = cv2.imread("./image/portrait6.jpg")
 #색상 gray로 변경
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 

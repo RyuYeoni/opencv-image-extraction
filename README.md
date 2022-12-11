@@ -1,3 +1,4 @@
+
 # extract images similar to search terms
 ---
 
@@ -12,6 +13,7 @@
 2. Unzip the file named '101_ObjectCategories.tar.gz'. (An image dataset of 10,000 photos)
 3. selenium install : pip install selenium==3.14.1
 4. beautifulsoup install : pip install beautifulsoup4
+5. Install the 'chromedriver.exe' for your version of chrome. 
 ---
 ## result
 ![result1](./result_img/result1.png)

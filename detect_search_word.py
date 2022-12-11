@@ -78,6 +78,9 @@ image_c = cv2.resize(image, (600, 500))  # Resize the image
 height, width, channel = image_c.shape
 print('change shape: ', height, width, channel)
 
+image_c = cv2.putText(image_c, search_name, (500, 100), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255))  # put text keyword (white)
+# image_c = cv2.putText(image_c, search_name, (500, 100), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 0))   # put text keyword (black)
+
 if image_c is None:   # Output a statement if image load fails
     print('Image load failed')
     sys.exit()

@@ -27,8 +27,6 @@ def search_selenium(search_name, search_path):
     while True:
         browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")   # Scroll down to the end of browser
 
-        # sleep(1)
-
         new_height = browser.execute_script("return document.body.scrollHeight")
         if new_height == last_height:
             try:

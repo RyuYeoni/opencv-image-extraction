@@ -69,8 +69,6 @@ except OSError:
 
 search_selenium(search_name, search_path)
 
-
-
 # image show
 image = cv2.imread('./download_images/'+ search_name + '/' +search_name + '_10.png')  # Reading images from downloaded folders
 

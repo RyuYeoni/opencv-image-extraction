@@ -32,3 +32,24 @@ def draw_color_histogram_from_image(file_name):
     im2.grid(False)
     im2.set_title("Histogram")
 draw_color_histogram_from_image('village.jpg')
+def get_histogram(image):
+    histogram = []
+
+    # Create histograms per channels, in 4 bins each.
+    for i in range(3):
+        channel_histogram = cv.calcHist(images=[image],
+                                         channels=[i],
+                                         mask=None,
+                                         histSize=[4],  # 히스토그램 구간을 4개로 한다.
+                                         ranges=[0, 256])
+        histogram.append(channel_histogram)  
+
+    histogram = np.concatenate(histogram)
+    histogram = cv.normalize(histogram, histogram)
+
+    return histogram
+filename = train[b'filenames'][0].decode()
+file_path = os.path.join(images_dir_path, filename)
+image = cv.imread(file_path)
+histogram = get_histogram(image)
+histogram

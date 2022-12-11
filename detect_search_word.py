@@ -44,7 +44,7 @@ def search_selenium(search_name, search_path):
 
     # Number of Image Collections
     # search_limit = int(input("Number of image collections desired : "))
-    search_limit = 30
+    search_limit = 11
     print("Number of image collections desired", search_limit)
 
     for i in range(search_limit):

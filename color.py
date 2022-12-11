@@ -62,7 +62,7 @@ def build_histogram_db():
 
     for file_name in tqdm(file_list):
         file_path = os.path.join(images_dir_path, file_name)
-        image = cv.imread('village.jpg')
+        image = cv.imread(file_path)
 
         histogram = get_histogram(image)
 

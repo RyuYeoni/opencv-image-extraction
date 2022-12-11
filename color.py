@@ -53,3 +53,21 @@ file_path = os.path.join(images_dir_path, filename)
 image = cv.imread(file_path)
 histogram = get_histogram(image)
 histogram
+def build_histogram_db():
+    histogram_db = {}
+
+    #디렉토리에 모아 둔 이미지 파일들을 전부 가져온다.
+    path = images_dir_path
+    file_list = os.listdir(images_dir_path)
+
+    for file_name in tqdm(file_list):
+        file_path = os.path.join(images_dir_path, file_name)
+        image = cv.imread('village.jpg')
+
+        histogram = get_histogram(image)
+
+        histogram_db[file_name] = histogram
+
+    return histogram_db
+histogram_db = build_histogram_db()
+histogram_db['village.jpg']

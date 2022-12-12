@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 
-# extract images similar to search terms (search_similar_images.py)
+# Extract images similar to search terms (search_similar_images.py)
 ---
 
 ## Description
@@ -16,7 +16,7 @@
 4. beautifulsoup install : pip install beautifulsoup4
 5. Install the 'chromedriver.exe' for your version of chrome. 
 ---
-## result
+## Result
 ![result1](./result_img/result1.png)
 ![result2](./result_img/result2.png)
 ---
@@ -46,7 +46,7 @@
 1. Change the line 19, 20 of detect_image_type.py
 2. Change the image files name to change the image.
 ---
-## result
+## Result
 ![result3](./result_img/result3.png)
 ![result4](./result_img/result4.png)
 ---

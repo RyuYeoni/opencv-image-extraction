@@ -41,6 +41,20 @@
 ## Precaution
 1. opencv should be installed.
 2. Used package 'haarcascade_frontalface_default.xml'
+---
+## How to implement
+1. Change the line 19, 20 of detect_image_type.py
+2. Change the image files name to change the image.
+---
+## result
+![result3](./result_img/result3.png)
+![result4](./result_img/result4.png)
+---
+# Reference
+- data set: https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
+- https://suy379.tistory.com/91
+- https://note.nkmk.me/en/python-opencv-hconcat-vconcat-np-tile/
+---
 
 =======
 version https://git-lfs.github.com/spec/v1

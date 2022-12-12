@@ -82,9 +82,38 @@
 ---
 
 
-## 여기부터 이어서 쓰기 위에 형식 참고
+# Detect a picture that has the most similar color to the picture (detect_color.py) / 202234856 고민정
+---
 
-
+## Description
+1. The program is executed.
+2. Load the image file of the entered path.
+3. Among the images to be searched, select five images that are most similar to the loaded image.
+4. Retrieves the images to be searched.
+5.  It is ordered based on similarity compared to the input image.
+6.  Select the top five images in order of similarity.
+7.  Displays the selected images.
+8.  The program ends.
+---
+## Precaution
+1. opencv should be installed.
+2. numpy, matplotlib, pillow must be installed.
+3. Need to download cifar-100 (pictures file)
+4. After downloading cifar-100 and creating each image file in cifar-100_file.py, combine it into one image file to make the dataset one.
+---
+## How to implement
+1. Enter the file name of the picture you want
+2. A picture with a color similar to the image file you entered is printed out.
+---
+## Result
+![result3](./result_img/result7.jpg)
+![result4](./result_img/result8.jpg)
+---
+# Reference
+- data set: https://www.cs.toronto.edu/~kriz/cifar.html
+- https://mindw96.tistory.com/m/10
+- https://velog.io/@och9854/F-16%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%8C%8C%EC%9D%BC-%EB%8B%A4%EB%A3%A8%EA%B8%B0
+---
 
 
 =======

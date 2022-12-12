@@ -72,3 +72,19 @@ def get_target_histogram():
     return histogram_db[filename]
 target_histogram = get_target_histogram()
 target_histogram
+def search(histogram_db, target_histogram, top_k=5):
+    results = {}
+
+    # Calculate similarity distance by comparing histograms.
+    for file_name, histogram in tqdm(histogram_db.items()):
+        distance = cv2.compareHist(H1=target_histogram,
+                                   H2=histogram,
+                                   method=cv2.HISTCMP_CHISQR)
+
+        results[file_name] = distance
+
+    results = dict(sorted(results.items(), key=lambda item: item[1])[:top_k])
+
+    return results
+result = search(histogram_db, target_histogram)
+result

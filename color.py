@@ -88,3 +88,11 @@ def search(histogram_db, target_histogram, top_k=5):
     return results
 result = search(histogram_db, target_histogram)
 result
+def show_result(result):
+    f=plt.figure(figsize=(10,3))
+    for idx, filename in enumerate(result.keys()):    
+        img_path = os.path.join(images_dir_path, filename)
+        im = f.add_subplot(1,len(result),idx+1)
+        img = Image.open(img_path)
+        im.imshow(img)
+show_result(result)

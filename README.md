@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 
 # extract images similar to search terms
+# search_similar_images.py
 ---
 
 ## Description
@@ -24,8 +25,24 @@
 - data set : https://data.caltech.edu/records/mzrjq-6wc02
 - https://github.com/BaekKyunShin/OpenCV_Project_Python
 - https://exit9509.tistory.com/m/17
+---
 
 
+# Detect the images type is portrait or landscape
+# detect_image_type.py
+---
+
+## Description
+1. Enter the two images.
+2. Detect the person's front face use openCV Haar Cascade.
+3. Detect the person's body use openCV HOG.
+4. If person's face or body detected than prints out a portrait picture.
+5. If a person is not detected, it prints out a landscape picture.
+6. Show the two images. If a person is detected, the detected part is displayed in the square box
+---
+## Precaution
+1. opencv should be installed.
+2. Used package 'haarcascade_frontalface_default.xml'
 
 =======
 version https://git-lfs.github.com/spec/v1

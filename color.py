@@ -64,5 +64,11 @@ def build_histogram_db():
         histogram_db[file_name] = histogram
 
     return histogram_db
-histogram_db = build_histogram_db()
-histogram_db['village.jpg']
+def get_target_histogram():
+    filename = input("이미지 파일명을 입력하세요: ")
+    if filename not in histogram_db:
+        print('유효하지 않은 이미지 파일명입니다.')
+        return None
+    return histogram_db[filename]
+target_histogram = get_target_histogram()
+target_histogram

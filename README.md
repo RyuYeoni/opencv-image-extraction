@@ -57,9 +57,34 @@
 ---
 
 
+# Extract the entered search word images (detect_search_word.py)
+---
+
+## Description
+1. Enter a keyword.
+2. Crawls images based on keywords.
+3. Crawling and reading one of the downloaded images.
+4. Increase the size of the image, insert the keyword letter, and print it out
+---
+## Precautions
+1. python and opencv should be installed
+2. install selenium (pip install selenium) 
+3. install beautifulsoup4 (pip install beautifulsoup4)  
+4. install Chomedriver (https://chromedriver.chromium.org/downloads, Chromedriver.exe)
+---
+## Result
+![result1](./result_img/result5.png)
+![result2](./result_img/result6.png)
+---
+## Reference 
+- https://durian9s-coding-tree.tistory.com/56
+- https://goodthings4me.tistory.com/783
+---
 
 
 ## 여기부터 이어서 쓰기 위에 형식 참고
+
+
 
 
 =======

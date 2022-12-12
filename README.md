@@ -1,7 +1,6 @@
 <<<<<<< HEAD
 
-# extract images similar to search terms
-### search_similar_images.py
+# extract images similar to search terms (search_similar_images.py)
 ---
 
 ## Description
@@ -28,8 +27,7 @@
 ---
 
 
-# Detect the images type is portrait or landscape
-# detect_image_type.py
+# Detect the images type is portrait or landscape (detect_image_type.py)
 ---
 
 ## Description

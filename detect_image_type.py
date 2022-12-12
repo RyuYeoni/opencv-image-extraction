@@ -16,8 +16,8 @@ def hconcat_resize_min(img_list, interpolation=cv2.INTER_CUBIC):
     return cv2.hconcat(img_list_resize)
 
 #읽을 사진 파일 portrait1~6, landscape1~6 이미지 넣을 수 있음
-img1 = cv2.imread("./detect_image_type_image/landscape4.jpg")
-img2 = cv2.imread("./detect_image_type_image/portrait4.jpg")
+img1 = cv2.imread("./detect_image_type_image/landscape6.jpg")
+img2 = cv2.imread("./detect_image_type_image/portrait6.jpg")
 
 #색상 gray로 변경
 gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
@@ -62,10 +62,10 @@ elif count_body1 > 0:      #이미지에서 사람 몸이 검출되어 count_bod
     find_image_type1 = 1     #이미지 타입에 1 대입
 
 if find_image_type1 == 0:    #이미지 타입이 0이면 풍경사진이라고 출력
-    print("First image is landscape")
+    print("Left image is landscape")
 
 elif find_image_type1 == 1:  #이미지 타입이 1이면 인물사진이라고 출력
-    print("First image is portrait")
+    print("Left image is portrait")
 
 find_image_type2 = 0
 if count_face2 > 0:
@@ -75,10 +75,10 @@ elif count_body2 > 0:
     find_image_type2 = 1
 
 if find_image_type2 == 0:
-    print("Second image is landscape")
+    print("Right image is landscape")
 
 elif find_image_type2 == 1:
-    print("Second image is portrait")
+    print("Right image is portrait")
 
 img_horizon_resize = hconcat_resize_min([img1, img2])
 cv2.imshow('Imges type', img_horizon_resize)

@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 
-# Extract images similar to search terms (search_similar_images.py)
+# Extract images similar to search terms (search_similar_images.py) / 202234911 유연이
 ---
 
 ## Description
@@ -27,7 +27,7 @@
 ---
 
 
-# Detect the images type is portrait or landscape (detect_image_type.py)
+# Detect the images type is portrait or landscape (detect_image_type.py) / 202234901 설지은
 ---
 
 ## Description
@@ -57,7 +57,7 @@
 ---
 
 
-# Extract the entered search word images (detect_search_word.py)
+# Extract the entered search word images (detect_search_word.py) / 202234885 노예원
 ---
 
 ## Description

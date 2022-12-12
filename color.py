@@ -31,3 +31,19 @@ def draw_color_histogram_from_image(file_name):
         im2.plot(histr,color = col)   # 그래프를 그릴 때 채널 색상과 맞춰서 그립니다.
     im2.set_title("Histogram")
 draw_color_histogram_from_image('village.jpg')
+def get_histogram(image):
+    histogram = []
+
+    # Create histograms per channels, in 4 bins each.
+    for i in range(3):
+        channel_histogram = cv2.calcHist(images=[image],
+                                         channels=[i],
+                                         mask=None,
+                                         histSize=[4],  # 히스토그램 구간을 4개로 한다.
+                                         ranges=[0, 256])
+        histogram.append(channel_histogram)  
+
+    histogram = np.concatenate(histogram)
+    histogram = cv2.normalize(histogram, histogram)
+
+    return histogram

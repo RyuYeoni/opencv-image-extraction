@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 
 # extract images similar to search terms
-# search_similar_images.py
+### search_similar_images.py
 ---
 
 ## Description

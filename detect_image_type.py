@@ -16,8 +16,8 @@ def hconcat_resize_min(img_list, interpolation=cv2.INTER_CUBIC):
     return cv2.hconcat(img_list_resize)
 
 #읽을 사진 파일 portrait1~6, landscape1~6 이미지 넣을 수 있음
-img1 = cv2.imread("./image/portrait6.jpg")
-img2 = cv2.imread("./image/landscape6.jpg")
+img1 = cv2.imread("./detect_image_type_image/portrait6.jpg")
+img2 = cv2.imread("./detect_image_type_image/landscape6.jpg")
 
 #색상 gray로 변경
 gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)

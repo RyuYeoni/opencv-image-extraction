@@ -38,7 +38,7 @@
 5. If a person is not detected, it prints out a landscape picture.
 6. Show the two images. If a person is detected, the detected part is displayed in the square box
 ---
-## Precaution
+## Precautions
 1. opencv should be installed.
 2. Used package 'haarcascade_frontalface_default.xml'
 ---

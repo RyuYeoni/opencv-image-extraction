@@ -73,8 +73,8 @@
 4. install Chomedriver (https://chromedriver.chromium.org/downloads, Chromedriver.exe)
 ---
 ## Result
-![result1](./result_img/result5.png)
-![result2](./result_img/result6.png)
+![result1](./result_img/result5.jpg)
+![result2](./result_img/result6.jpg)
 ---
 ## Reference 
 - https://durian9s-coding-tree.tistory.com/56

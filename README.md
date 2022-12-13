@@ -94,6 +94,7 @@
 6.  Select the top five images in order of similarity.
 7.  Displays the selected images.
 8.  The program ends.
+‘cifar-100_file.py’ creates a ‘test_image’ file and a ‘train_image’ file. The ‘train_image’ file becomes a dataset that finds similar pictures. The ‘pictures’ file combines all the images in the ‘train_image’ file into one. It doesn't matter if the image you want to input is a picture in cifar-100, but if it's an external image, you have to put it in ‘pictures’ file. The code is 'color.py'.It is located in both the 'color.py'  and the 'color_detecting.ipynb' file. It's the same code.
 ---
 ## Precaution
 1. opencv should be installed.
